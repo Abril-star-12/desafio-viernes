@@ -6,12 +6,9 @@
     <title>Document</title>
 </head>
 <body>
- <h1> Bienvenido a nuestra tienda</h1>   
- <p> Por favor, ingrese la cantidad de productos que deseas comprar en el cuadro de dialogo que aparecera.</p>
- 
- <script>
-    let nombreProducto = 'Botas'; // Nombre del producto
-    let cantidadDeseada = parseInt(prompt(`¿cuantas ${nombreProducto} quiere comprar?`))
+    <script>
+         let nombreProducto = 'Botas'; // Nombre del producto
+    let cantidadDeseada = parseInt(prompt(`¿Cuantas${nombreProducto} quiere comprar?`));
     let precioUnitario = 250; // Precio por unidad
     let total = cantidadDeseada * precioUnitario; // Total sin descuento
 
@@ -26,7 +23,7 @@
     let totalConDescuento = total - descuento; // Calcular total con descuento si aplica
 
     // Mostrar el ticket con el descuento si aplica
-   alert (`Ticket de compra:\n${nombreProducto} X ${cantidadDeseada}= $${total}\nDescuento: $${descuento}\nTotal a pagar: $${totalConDescuento}`)
-</script>
+    alert (`Ticket de compra:\n${nombreProducto} X ${cantidadDeseada}= $${total}\nDescuento: $${descuento}\nTotal a pagar: $${totalConDescuento}`)
+    </script>
 </body>
 </html>
